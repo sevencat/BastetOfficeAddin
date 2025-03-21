@@ -6,11 +6,10 @@ using NetOffice.Tools;
 
 namespace Bastet.OfficeAddin;
 
-//e4866de5-adb8-60d8-1d7c-463da09e39d8
 [ComVisible(true)]
 [Guid("e4866de5-adb8-60d8-1d7c-463da09e39d8")]
 [ProgId("Bastet.OfficeAddin.MyExcelAddin")]
-[COMAddin("Bastet Word Addin", "Wordaddin By Bastet", LoadBehavior.LoadAtStartup)]
+[COMAddin("Bastet Excel Addin", "Exceladdin By Bastet", LoadBehavior.LoadAtStartup)]
 public class MyExcelAddin : COMAddin
 {
 	public MyExcelAddin()
