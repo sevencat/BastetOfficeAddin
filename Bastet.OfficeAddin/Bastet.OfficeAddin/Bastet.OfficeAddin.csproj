@@ -58,9 +58,8 @@
     <Reference Include="VBIDEApi, Version=1.9.7.0, Culture=neutral, PublicKeyToken=297f57b43ae7c1de, processorArchitecture=MSIL">
       <HintPath>..\packages\NetOfficeFw.VBIDE.1.9.7\lib\net462\VBIDEApi.dll</HintPath>
     </Reference>
-    <Reference Include="WordApi, Version=1.9.5.0, Culture=neutral, PublicKeyToken=297f57b43ae7c1de, processorArchitecture=MSIL">
-      <HintPath>..\packages\NetOfficeFw.Word.1.9.5\lib\net462\WordApi.dll</HintPath>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
+    <Reference Include="WordApi, Version=1.9.7.0, Culture=neutral, PublicKeyToken=297f57b43ae7c1de, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetOfficeFw.Word.1.9.7\lib\net462\WordApi.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

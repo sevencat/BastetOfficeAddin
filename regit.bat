@@ -1,0 +1,1 @@
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\regasm F:\github\BastetOfficeAddin\Bastet.OfficeAddin\Bastet.OfficeAddin\bin\Debug\Bastet.OfficeAddin.dll

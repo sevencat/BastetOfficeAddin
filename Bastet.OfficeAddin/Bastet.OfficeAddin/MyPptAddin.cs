@@ -10,4 +10,7 @@ namespace Bastet.OfficeAddin;
 [COMAddin("Bastet PowerPoint Addin", "PowerPointaddin By Bastet", LoadBehavior.LoadAtStartup)]
 public class MyPptAddin : COMAddin
 {
+	public MyPptAddin()
+	{
+	}
 }
