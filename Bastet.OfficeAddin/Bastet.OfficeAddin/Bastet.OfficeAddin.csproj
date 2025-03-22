@@ -44,6 +44,8 @@
     <Reference Include="PowerPointApi, Version=1.9.7.0, Culture=neutral, PublicKeyToken=297f57b43ae7c1de, processorArchitecture=MSIL">
       <HintPath>..\packages\NetOfficeFw.PowerPoint.1.9.7\lib\net462\PowerPointApi.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\stdole.7.0.3300\lib\net10\stdole.dll</HintPath>
     </Reference>
@@ -51,36 +53,40 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
     <Reference Include="VBIDEApi, Version=1.9.7.0, Culture=neutral, PublicKeyToken=297f57b43ae7c1de, processorArchitecture=MSIL">
       <HintPath>..\packages\NetOfficeFw.VBIDE.1.9.7\lib\net462\VBIDEApi.dll</HintPath>
     </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
     <Reference Include="WordApi, Version=1.9.7.0, Culture=neutral, PublicKeyToken=297f57b43ae7c1de, processorArchitecture=MSIL">
       <HintPath>..\packages\NetOfficeFw.Word.1.9.7\lib\net462\WordApi.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddinPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddinPanel.Designer.cs">
+      <DependentUpon>AddinPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyExcelAddin.cs" />
     <Compile Include="MyPptAddin.cs" />
     <Compile Include="MyWordAddin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WordPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="WordPanel.Designer.cs">
-      <DependentUpon>WordPanel.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="WordPanel.resx">
-      <DependentUpon>WordPanel.cs</DependentUpon>
+    <EmbeddedResource Include="AddinPanel.resx">
+      <DependentUpon>AddinPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WordRibbonUI.xml" />
   </ItemGroup>

@@ -1,6 +1,6 @@
 ﻿namespace Bastet.OfficeAddin
 {
-    partial class WordPanel
+    partial class AddinPanel
     {
         /// <summary> 
         /// 必需的设计器变量。
@@ -28,18 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.elementHostMain = new System.Windows.Forms.Integration.ElementHost();
             this.SuspendLayout();
             // 
-            // WordPanel
+            // elementHostMain
+            // 
+            this.elementHostMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.elementHostMain.Location = new System.Drawing.Point(0, 0);
+            this.elementHostMain.Name = "elementHostMain";
+            this.elementHostMain.Size = new System.Drawing.Size(341, 334);
+            this.elementHostMain.TabIndex = 0;
+            this.elementHostMain.Text = "elementHost1";
+            this.elementHostMain.Child = null;
+            // 
+            // AddinPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "WordPanel";
-            this.Size = new System.Drawing.Size(352, 466);
+            this.Controls.Add(this.elementHostMain);
+            this.Name = "AddinPanel";
+            this.Size = new System.Drawing.Size(341, 334);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Integration.ElementHost elementHostMain;
     }
 }

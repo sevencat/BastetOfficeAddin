@@ -14,7 +14,6 @@ namespace Bastet.OfficeAddin;
 [Guid("9777f77a-f286-49d6-817b-0500c95b89c2")]
 [ProgId("Bastet.OfficeAddin.MyWordAddin")]
 [COMAddin("Bastet Word Addin", "Wordaddin By Bastet", LoadBehavior.LoadAtStartup)]
-[CustomPane(typeof(WordPanel), "Simple Taskpane", true, PaneDockPosition.msoCTPDockPositionRight)]
 public class MyWordAddin : COMAddin
 {
 	Application wordApp;
@@ -45,7 +44,7 @@ public class MyWordAddin : COMAddin
 	//TODO 后面用zip文件统一管理资源。不依赖于vsproject
 	public override string GetCustomUI(string RibbonID)
 	{
-		var ret = GetResourceText("Bastet.OfficeAddin.Word.WordRibbonUI.xml");
+		var ret = GetResourceText("Bastet.OfficeAddin.WordRibbonUI.xml");
 		return ret;
 	}
 
@@ -60,7 +59,7 @@ public class MyWordAddin : COMAddin
 		var tag = control.Tag;
 		if (id == "aboutButton")
 		{
-			var panel = this.TaskPaneFactory.CreateCTP("Bastet.OfficeAddin.Word.WordPanel", "Example");
+			var panel = this.TaskPaneFactory.CreateCTP("Bastet.OfficeAddin.AddinPanel", "Example");
 			panel.DockPosition = MsoCTPDockPosition.msoCTPDockPositionRight;
 			panel.Width = 550;
 			panel.Visible = true;
