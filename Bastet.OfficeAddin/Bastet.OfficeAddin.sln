@@ -5,6 +5,10 @@ VisualStudioVersion = 17.13.35828.75 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bastet.OfficeAddin", "Bastet.OfficeAddin\Bastet.OfficeAddin.csproj", "{20AF84D2-18C8-4FF3-A3C7-C2DB39DA0301}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bastet.Addin.Core", "Bastet.Addin.Core\Bastet.Addin.Core.csproj", "{42F71FCA-AE71-4379-8E04-0493F7860A41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bastet.Addin.Common", "Bastet.Addin.Common\Bastet.Addin.Common.csproj", "{05995DEA-5BB4-4C38-9E27-446DFCD559E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{20AF84D2-18C8-4FF3-A3C7-C2DB39DA0301}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20AF84D2-18C8-4FF3-A3C7-C2DB39DA0301}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20AF84D2-18C8-4FF3-A3C7-C2DB39DA0301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F71FCA-AE71-4379-8E04-0493F7860A41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F71FCA-AE71-4379-8E04-0493F7860A41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F71FCA-AE71-4379-8E04-0493F7860A41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F71FCA-AE71-4379-8E04-0493F7860A41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05995DEA-5BB4-4C38-9E27-446DFCD559E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05995DEA-5BB4-4C38-9E27-446DFCD559E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05995DEA-5BB4-4C38-9E27-446DFCD559E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05995DEA-5BB4-4C38-9E27-446DFCD559E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
